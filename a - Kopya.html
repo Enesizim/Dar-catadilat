@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="tr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darıca Tadilat | Her Türlü Tadilat İşleriniz Yapılır</title>
+    <meta name="description" content="Darıca'da demir doğrama, ferforje, seramik, fayans, havuz, alçı-boya ve sıhhi tesisat işlerinizde profesyonel hizmet.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            border-color: #2563eb;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0f172a',
+                        secondary: '#475569',
+                        accent: '#2563eb',
+                        whatsapp: '#25D366'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-white text-primary antialiased flex flex-col min-h-screen">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex items-center gap-2 group">
+                        <div class="w-10 h-10 bg-accent text-white rounded-lg flex items-center justify-center shadow-md">
+                            <i class="fa-solid fa-house-chimney-crack text-xl"></i>
+                        </div>
+                        <div class="flex flex-col">
+                            <span class="font-bold text-2xl tracking-tight text-primary leading-none">Darıca<span class="text-accent">Tadilat</span></span>
+                            <span class="text-[10px] text-secondary font-medium tracking-wider uppercase mt-1">Yapı & Onarım</span>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#hizmetler" class="text-secondary font-medium hover:text-accent transition">Hizmetlerimiz</a>
+                    <a href="#iletisim" class="text-secondary font-medium hover:text-accent transition">İletişim</a>
+                    
+                    <a href="https://wa.me/905439254125" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white px-5 py-2.5 rounded-full font-medium transition shadow-md flex items-center gap-2">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>0 543 925 41 25</span>
+                    </a>
+                </nav>
+
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-primary hover:text-accent">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg p-4 space-y-4">
+            <a href="#hizmetler" class="block text-secondary font-medium py-2 border-b border-gray-50">Hizmetlerimiz</a>
+            <a href="#iletisim" class="block text-secondary font-medium py-2 border-b border-gray-50">İletişim</a>
+            <a href="https://wa.me/905439254125" class="block bg-whatsapp text-white text-center py-3 rounded-lg font-bold uppercase tracking-wide">WhatsApp'tan Yazın</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-white pt-20 pb-24 border-b border-gray-50 overflow-hidden">
+        <div class="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-5"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center">
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-primary tracking-tight mb-6">
+                Evinizi Yenilemenin <br/> <span class="text-accent">En Kolay Yolu</span>
+            </h1>
+            <p class="mt-4 max-w-2xl text-lg text-secondary mx-auto mb-10 leading-relaxed">
+                Demir doğrama, fayans, boya ve tesisat işlerinizde profesyonel hizmet. Darıca ve çevresinde her türlü tadilat işleriniz uzman ekibimizle güvenle yapılır.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="https://wa.me/905439254125" target="_blank" class="bg-whatsapp hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-lg flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-xl"></i>
+                    Hemen Fiyat Alın
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="hizmetler" class="py-20 bg-gray-50/50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-primary mb-4">Hizmetlerimiz</h2>
+                <div class="w-16 h-1 bg-accent mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                
+                <!-- Demir Doğrama -->
+                <div class="service-card bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-hammer text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Demir Doğrama</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Kapı, pencere ve çatı sistemleri için sağlam ve güvenli demir doğrama çözümleri.</p>
+                </div>
+
+                <!-- Ferforje -->
+                <div class="service-card bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-shield-halved text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Ferforje İşleri</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Balkon, merdiven ve bahçe kapıları için estetik, dekoratif ve sanatsal demir işçiliği.</p>
+                </div>
+
+                <!-- Seramik -->
+                <div class="service-card bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-border-all text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Seramik İşleri</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Islak zeminler ve mutfaklar için modern seramik kaplama ve yenileme hizmeti.</p>
+                </div>
+
+                <!-- Fayans -->
+                <div class="service-card bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-layer-group text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Fayans İşleri</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Banyo ve mutfaklarda su yalıtımlı, şık ve uzun ömürlü fayans döşeme uygulamaları.</p>
+                </div>
+
+                <!-- Havuz -->
+                <div class="service-card bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-water text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Havuz İşleri</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Yeni havuz yapımı, mevcut havuzların yalıtımı, fayans değişimi ve genel onarım.</p>
+                </div>
+
+                <!-- Alçı Boya -->
+                <div class="service-card bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-paint-roller text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Alçı & Boya İşleri</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Pürüzsüz duvarlar için saten alçı uygulaması ve profesyonel boya badana hizmeti.</p>
+                </div>
+
+                <!-- Tesisat -->
+                <div class="service-card bg-white p-8 rounded-2xl border border-gray-200 shadow-sm flex flex-col h-full">
+                    <div class="w-12 h-12 bg-blue-50 text-accent rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-wrench text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Sıhhi Tesisat</h3>
+                    <p class="text-secondary text-sm leading-relaxed">Su kaçağı tespiti, tesisat yenileme ve her türlü onarım işlemleri.</p>
+                </div>
+
+                <!-- Genel Tadilat -->
+                <div class="service-card bg-accent text-white p-8 rounded-2xl shadow-lg flex flex-col h-full">
+                    <div class="w-12 h-12 bg-white/20 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fa-solid fa-star text-xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Genel Tadilat</h3>
+                    <p class="text-blue-50 text-sm leading-relaxed">A'dan Z'ye tüm ev ve iş yeri tadilat işleriniz profesyonel ekibimizce yapılır.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="iletisim" class="mt-auto bg-white border-t border-gray-100 pt-16 pb-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-12 text-center md:text-left">
+                <div>
+                    <h4 class="font-bold text-xl mb-4">Darıca Tadilat</h4>
+                    <p class="text-secondary text-sm leading-relaxed">Uzman kadromuzla yaşam alanlarınızı güzelleştiriyoruz. Kalite ve güven önceliğimizdir.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">İletişim</h4>
+                    <p class="text-secondary text-sm mb-2">WhatsApp / Telefon:</p>
+                    <a href="https://wa.me/905439254125" class="text-accent font-bold text-lg">0 543 925 41 25</a>
+                    <p class="text-secondary text-sm mt-4">Hizmet Bölgesi: Darıca ve Kocaeli</p>
+                </div>
+                <div>
+                    <h4 class="font-bold text-lg mb-4">Çalışma Saatleri</h4>
+                    <p class="text-secondary text-sm">Haftanın 7 günü hizmetinizdeyiz.</p>
+                    <p class="text-primary font-bold mt-2">Pazartesi - Pazar: 09:00 - 18:00</p>
+                </div>
+            </div>
+            <div class="mt-16 text-center text-xs text-gray-400 border-t border-gray-50 pt-8">
+                &copy; 2026 Darıca Tadilat. Tüm hakları saklıdır.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Fixed WhatsApp Button -->
+    <a href="https://wa.me/905439254125" target="_blank" class="fixed bottom-6 right-6 z-50 bg-whatsapp text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-lg transition-transform hover:scale-110">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+            var menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
